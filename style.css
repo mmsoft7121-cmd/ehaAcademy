@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f7f7f79d;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+ul#todo-list {
+  list-style: none;
+  padding: 0;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+ul#todo-list li {
+  background: #eee;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  color: gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+ul#todo-list li.completed {
+  background: #d4edda;
+  color: #155724;
+}
+
+.check-icon {
+  display: none;
+}
+
+li.completed .check-icon {
+  display: inline;
+}
